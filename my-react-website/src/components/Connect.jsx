@@ -20,7 +20,7 @@ function Connect() {
             <i className="fab fa-linkedin"></i>
             <span>LinkedIn</span>
           </a>
-          <a href="/resume.pdf" download className="connect-link">
+          <a href={`${process.env.PUBLIC_URL}/resume.pdf`} download="Aditya_Tripathi_Resume" className="connect-link">
             <i className="fas fa-file-download"></i>
             <span>Download Resume</span>
           </a>
