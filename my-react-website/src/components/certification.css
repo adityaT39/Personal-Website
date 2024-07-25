@@ -1,0 +1,65 @@
+#certifications {
+    padding: 60px 20px;
+    background: #f4f4f9;
+    text-align: center;
+  }
+  
+  .certifications-container {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .certifications-container h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+  }
+  
+  .certification-list {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
+  .certification-item {
+    display: flex;
+    align-items: center;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .certification-logo {
+    max-width: 60px; 
+    margin-right: 20px;
+  }
+  
+  .certification-text {
+    flex: 1;
+    text-align: left;
+  }
+  
+  .certification-text h2 {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .certification-text p {
+    font-size: 1em;
+    color: #666;
+    margin-bottom: 10px;
+  }
+  
+  .certification-text a {
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .certification-text a:hover {
+    color: #0056b3;
+  }

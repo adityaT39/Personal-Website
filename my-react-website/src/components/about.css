@@ -1,0 +1,32 @@
+#about {
+    padding: 100px 20px;
+    text-align: center;
+  }
+  
+  .about-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: left;
+  }
+  
+  .about-container h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+  }
+  
+  .about-container h2 {
+    font-size: 1.5em;
+    color: #666;
+    margin-bottom: 20px;
+  }
+  
+  .about-content {
+    margin-bottom: 30px;
+  }
+  
+  .about-content p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }

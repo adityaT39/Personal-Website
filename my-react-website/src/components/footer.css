@@ -1,0 +1,39 @@
+footer {
+    background-color: black;
+    padding: 20px 0;
+    font-family: 'Lato', sans-serif;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    z-index: 1000;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .back-to-top {
+    color: white;
+    font-size: 18px;
+    background-color: black;
+    border: 2px solid white;
+    border-radius: 25px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .back-to-top:hover {
+    background-color: white;
+    color: black;
+  }
+  
+  .copyright {
+    color: white;
+    font-size: 18px;
+  }

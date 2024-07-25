@@ -1,0 +1,59 @@
+#connect {
+    padding: 100px 20px;
+    text-align: center;
+  }
+  
+  .connect-container {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .connect-container h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+  }
+  
+  .connect-container h2 {
+    font-size: 1.5em;
+    color: #666;
+    margin-bottom: 40px;
+  }
+  
+  .connect-links {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .connect-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s;
+  }
+  
+  .connect-link i {
+    font-size: 3em;
+    margin-bottom: 10px;
+    color: #333;
+    transition: color 0.3s;
+  }
+  
+  .connect-link span {
+    font-size: 1.2em;
+    color: #333;
+  }
+  
+  .connect-link:hover {
+    color: #007bff;
+  }
+  
+  .connect-link:hover i {
+    color: #007bff;
+  }
