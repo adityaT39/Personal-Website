@@ -5,13 +5,13 @@ const projects = [
   {
     title: 'Blog Post Website',
     image: process.env.PUBLIC_URL + '/images/Blogpost_Website_screenshot.png',
-    link: 'https://github.com/adityaT39/COSC-360-Project',
+    link: 'https://github.com/adityaT39/COSC_360_Project',
     description: 'A dynamic blog post website using HTML, CSS, JavaScript, AJAX, PHP, and SQL.',
   },
   {
     title: 'Color Break (Turn-based Card Game)',
     image: process.env.PUBLIC_URL + '/images/Color_Break_screenshot.png',
-    link: 'https://github.com/adityaT39/Color-Break',
+    link: 'https://github.com/COSC-499-W2023/year-long-project-team-19',
     description: 'A multiplayer turn-based card game using Unity and web technologies.',
   },
   {
@@ -24,14 +24,14 @@ const projects = [
   {
     title: 'We Ride ride sharing app',
     image: process.env.PUBLIC_URL + '/images/We_Ride_screenshot.png',
-    link: 'https://github.com/adityaT39/OpenSea-Clone',
+    link: 'https://github.com/sam131102/Carpooling-App-HCI',
     description: 'A clone of the OpenSea NFT marketplace using the ICP blockchain and Motoko.',
   },
 
   {
     title: 'Personal Portfolio Website',
     image: '/images/personal_website_screenshot.png',
-    link: 'https://github.com/adityat39/Personal-Website',
+    link: 'https://github.com/adityaT39/Personal-Website',
     description: 'A personal portfolio website showcasing projects, skills, and achievements.',
   }
 ];
