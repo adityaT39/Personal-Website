@@ -8,7 +8,7 @@ function Certification() {
         <h1>Certifications</h1>
         <div className="certification-list">
           <div className="certification-item">
-            <img src="/images/codecademy-logo.jpg" alt="Codecademy Logo" className="certification-logo" />
+            <img src={process.env.PUBLIC_URL + "/images/codecademy-logo.jpg"} alt="Codecademy Logo" className="certification-logo" />
             <div className="certification-text">
               <h2>Learn Java</h2>
               <p>Issuing Organization: Codecademy</p>
@@ -19,7 +19,7 @@ function Certification() {
             </div>
           </div>
           <div className="certification-item">
-            <img src= "/images/codecademy-logo.jpg" alt="Codecademy Logo" className="certification-logo" />
+            <img src={process.env.PUBLIC_URL + "/images/codecademy-logo.jpg"} alt="Codecademy Logo" className="certification-logo" />
             <div className="certification-text">
               <h2>Learn R</h2>
               <p>Issuing Organization: Codecademy</p>
@@ -30,7 +30,7 @@ function Certification() {
             </div>
           </div>
           <div className="certification-item">
-            <img src="/images/udemy-logo.png" alt="Udemy Logo" className="certification-logo" />
+            <img src={process.env.PUBLIC_URL + "/images/udemy-logo.png"} alt="Udemy Logo" className="certification-logo" />
             <div className="certification-text">
               <h2>The Complete 2024 Web Development Bootcamp</h2>
               <p>Issuing Organization: Udemy</p>
