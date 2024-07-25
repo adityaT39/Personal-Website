@@ -19,7 +19,7 @@ function Certification() {
             </div>
           </div>
           <div className="certification-item">
-            <img src="/images/codecademy-logo.jpg" alt="Codecademy Logo" className="certification-logo" />
+            <img src= "/images/codecademy-logo.jpg" alt="Codecademy Logo" className="certification-logo" />
             <div className="certification-text">
               <h2>Learn R</h2>
               <p>Issuing Organization: Codecademy</p>

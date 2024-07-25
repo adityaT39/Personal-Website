@@ -30,7 +30,7 @@ const projects = [
 
   {
     title: 'Personal Portfolio Website',
-    image: '/images/personal_website_screenshot.png',
+    image: process.env.PUBLIC_URL + '/images/personal_website_screenshot.png',
     link: 'https://github.com/adityaT39/Personal-Website',
     description: 'A personal portfolio website showcasing projects, skills, and achievements.',
   }
