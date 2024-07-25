@@ -26,6 +26,13 @@ const projects = [
     image: process.env.PUBLIC_URL + '/images/We_Ride_screenshot.png',
     link: 'https://github.com/adityaT39/OpenSea-Clone',
     description: 'A clone of the OpenSea NFT marketplace using the ICP blockchain and Motoko.',
+  },
+
+  {
+    title: 'Personal Portfolio Website',
+    image: '/images/personal_website_screenshot.png',
+    link: 'https://github.com/adityat39/Personal-Website',
+    description: 'A personal portfolio website showcasing projects, skills, and achievements.',
   }
 ];
 
