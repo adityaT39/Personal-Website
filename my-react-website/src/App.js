@@ -6,6 +6,7 @@ import Education from './components/Education';
 import Project from './components/Project';
 import Connect from './components/Connect';
 import Certification from './components/certification';
+import Experience from './components/Experience';
 import './App.css';
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
     <div className="App">
       <Navbar />
       <About />
+      <Experience />
       <Education />
       <Project />
       <Certification />
