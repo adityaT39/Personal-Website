@@ -1,59 +1,77 @@
 #connect {
-    padding: 100px 20px;
-    text-align: center;
-  }
-  
-  .connect-container {
-    max-width: 800px;
-    margin: 0 auto;
-  }
-  
-  .connect-container h1 {
-    font-size: 3em;
-    margin-bottom: 10px;
-    color: #333;
-    text-transform: uppercase;
-    letter-spacing: 1.5px;
-  }
-  
-  .connect-container h2 {
-    font-size: 1.5em;
-    color: #666;
-    margin-bottom: 40px;
-  }
-  
-  .connect-links {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    gap: 20px;
-  }
-  
-  .connect-link {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-decoration: none;
-    color: #333;
-    transition: color 0.3s;
-  }
-  
-  .connect-link i {
-    font-size: 3em;
-    margin-bottom: 10px;
-    color: #333;
-    transition: color 0.3s;
-  }
-  
-  .connect-link span {
-    font-size: 1.2em;
-    color: #333;
-  }
-  
-  .connect-link:hover {
-    color: #007bff;
-  }
-  
-  .connect-link:hover i {
-    color: #007bff;
-  }
+  padding: 80px 20px;
+  text-align: center;
+  background: linear-gradient(135deg, var(--dark) 0%, var(--dark-2) 100%) !important;
+}
+
+.connect-container {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.connect-container h1 {
+  font-size: 2.4em;
+  font-weight: 800;
+  margin-bottom: 10px;
+  color: var(--white);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.connect-container h2 {
+  font-size: 1.05em;
+  font-weight: 400;
+  color: var(--muted);
+  margin-bottom: 48px;
+  line-height: 1.6;
+}
+
+.connect-links {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.connect-link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  color: #cbd5e1;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  padding: 14px 24px;
+  border-radius: 10px;
+  font-size: 1em;
+  font-weight: 500;
+  transition: background 0.2s ease, color 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
+}
+
+.connect-link:hover {
+  background: var(--accent);
+  color: var(--white);
+  border-color: var(--accent);
+  transform: translateY(-3px);
+}
+
+.connect-link i {
+  font-size: 1.3em;
+}
+
+.connect-link span {
+  font-size: 1em;
+}
+
+.connect-icon {
+  animation: icon-float 3s ease-in-out infinite;
+}
+
+.connect-link:nth-child(1) .connect-icon { animation-delay: 0s; }
+.connect-link:nth-child(2) .connect-icon { animation-delay: 0.75s; }
+.connect-link:nth-child(3) .connect-icon { animation-delay: 1.5s; }
+.connect-link:nth-child(4) .connect-icon { animation-delay: 2.25s; }
+
+.connect-link:hover .connect-icon {
+  animation-play-state: paused;
+}

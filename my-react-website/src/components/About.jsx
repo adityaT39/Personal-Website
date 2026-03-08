@@ -1,26 +1,62 @@
-import React from 'react';
+import React, { useRef, useEffect } from 'react';
 import './about.css';
 
+const skills = [
+  'Python', 'SQL', 'Excel', 'Tableau', 'React', 'JavaScript',
+  'HTML5', 'CSS3', 'Git', 'Microsoft 365', 'CRM Tools',
+];
+
 function About() {
+  const sectionRef = useRef(null);
+
+  useEffect(() => {
+    const section = sectionRef.current;
+    if (!section) return;
+    requestAnimationFrame(() => {
+      section.classList.add('about-loaded');
+    });
+  }, []);
+
   return (
-    <section id="about">
+    <section id="about" ref={sectionRef}>
+      <div className="about-orbs" aria-hidden="true">
+        <div className="orb orb-1" />
+        <div className="orb orb-2" />
+        <div className="orb orb-3" />
+        <div className="orb orb-4" />
+      </div>
       <div className="about-container">
-        <h1>About Me</h1>
-        <h2>Graduate in Computer Science</h2>
-        <div className="about-content">
-          <p>Hey, I'm Aditya! 👋</p>
+        <div className="about-header">
+          <span className="about-greeting about-animate">Hi, I'm</span>
+          <h1 className="about-animate">Aditya Tripathi</h1>
+          <h2 className="about-animate">CS Graduate · Coordinator &amp; Sales Professional</h2>
+        </div>
+        <div className="about-content about-animate">
           <p>
-            I'm a fresh graduate in Computer Science from The University of British Columbia. I have a strong passion for web and software development, backed by hands-on experience in various projects and internships.
+            I'm a Computer Science graduate from the University of British Columbia based in
+            Kelowna, BC. Currently working as a Coordinator at Onpoint Consulting NZ, where
+            I manage operations, built and launched the company website, and support HR and
+            client documentation workflows.
           </p>
           <p>
-            My skill set includes HTML5, CSS3, JavaScript, Java, SQL, PHP, Python, and more. I have developed dynamic websites, multiplayer turn-based game, and decentralized applications on the ICP blockchain.
+            Previously a top-performing Technology & Sales Associate at Bell (Best Buy Express),
+            ranked Top 2 in the BC district. I combine a technical background with strong
+            client-facing and data analysis skills — feel free to explore my work below!
           </p>
-          <p>
-            I am proactive, ambitious, and a structured problem solver with a knack for collaboration. In my previous roles, I have demonstrated my technical and customer support skills by resolving technical issues, conducting detailed research, and assisting customers with product selections.
-          </p>
-          <p>
-            On this page, you can find out more about my educational background, skills, and projects. Feel free to explore my work and connect with me for potential job opportunities.
-          </p>
+        </div>
+        <div className="skills-section">
+          <h3 className="about-animate">Skills &amp; Technologies</h3>
+          <div className="skills-grid">
+            {skills.map((skill, index) => (
+              <span
+                key={skill}
+                className="skill-badge about-animate"
+                style={{ '--skill-index': index }}
+              >
+                {skill}
+              </span>
+            ))}
+          </div>
         </div>
       </div>
     </section>
