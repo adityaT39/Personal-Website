@@ -66,20 +66,20 @@ export const PROJECTS = [
     href: "https://github.com/adityaT39/rate-limiter-lab",
   },
   {
-    name: "OnPoint Talent",
+    name: "Spotify Music Rating API",
     year: "2026",
-    stack: ["Next.js", "TypeScript", "Supabase", "Stripe", "Claude API"],
+    stack: ["Python", "FastAPI", "PostgreSQL", "Docker"],
     blurb:
-      "Full-stack recruitment platform with Stripe billing, Google OAuth and Claude-powered resume feedback, skill extraction and job-fit matching. Shipped to production and in daily use.",
-    href: "https://onpointtalent.co.nz",
+      "Production REST API with Spotify OAuth 2.0, album/track search, ratings and custom lists — containerized with Docker Compose, Redis caching and Alembic migrations, deployed live on Render with a pytest + GitHub Actions CI pipeline.",
+    href: "https://github.com/adityaT39/spotify-album-api",
   },
   {
-    name: "OnPoint Corporate Site",
-    year: "2026",
-    stack: ["Next.js", "TypeScript", "Vercel"],
+    name: "Online Retail Sales Analysis",
+    year: "2025",
+    stack: ["Python", "SQL", "Tableau"],
     blurb:
-      "Marketing site designed and shipped solo alongside the platform, built to the same Next.js/TypeScript stack and deployed on Vercel.",
-    href: "https://onpointconsulting.co.nz",
+      "Cleaned and analyzed 1.07M real e-commerce transactions (£19.6M revenue, 43 countries), built RFM segmentation in SQL surfacing that 13% of customers drive 55% of revenue, and an interactive Tableau dashboard quantifying a £2.3M win-back opportunity.",
+    href: "https://github.com/adityaT39/online-retail-analysis",
   },
 ];
 
