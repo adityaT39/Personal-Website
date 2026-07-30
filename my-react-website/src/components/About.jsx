@@ -1,66 +1,47 @@
-import React, { useRef, useEffect } from 'react';
-import './about.css';
+import { EMAIL, HERO_LINKS } from "../data";
 
-const skills = [
-  'Python', 'SQL', 'Excel', 'Tableau', 'React', 'JavaScript',
-  'HTML5', 'CSS3', 'Git', 'Microsoft 365', 'CRM Tools',
-];
-
-function About() {
-  const sectionRef = useRef(null);
-
-  useEffect(() => {
-    const section = sectionRef.current;
-    if (!section) return;
-    requestAnimationFrame(() => {
-      section.classList.add('about-loaded');
-    });
-  }, []);
-
+export default function About({ copyLabel, onCopyEmail, hover, onHoverEnter, onHoverLeave }) {
   return (
-    <section id="about" ref={sectionRef}>
-      <div className="about-orbs" aria-hidden="true">
-        <div className="orb orb-1" />
-        <div className="orb orb-2" />
-        <div className="orb orb-3" />
-        <div className="orb orb-4" />
-      </div>
-      <div className="about-container">
-        <div className="about-header">
-          <span className="about-greeting about-animate">Hi, I'm</span>
-          <h1 className="about-animate">Aditya Tripathi</h1>
-          <h2 className="about-animate">CS Graduate · Coordinator &amp; Sales Professional</h2>
-        </div>
-        <div className="about-content about-animate">
-          <p>
-            I'm a Computer Science graduate from the University of British Columbia based in
-            Kelowna, BC. Currently working as a Coordinator at Onpoint Consulting NZ, where
-            I manage operations, built and launched the company website, and support HR and
-            client documentation workflows.
-          </p>
-          <p>
-            Previously a top-performing Technology & Sales Associate at Bell (Best Buy Express),
-            ranked Top 2 in the BC district. I combine a technical background with strong
-            client-facing and data analysis skills — feel free to explore my work below!
-          </p>
-        </div>
-        <div className="skills-section">
-          <h3 className="about-animate">Skills &amp; Technologies</h3>
-          <div className="skills-grid">
-            {skills.map((skill, index) => (
-              <span
-                key={skill}
-                className="skill-badge about-animate"
-                style={{ '--skill-index': index }}
-              >
-                {skill}
+    <section id="about">
+      <div className="eyebrow">Portfolio · 2026</div>
+      <h1 className="hero-name">Aditya Tripathi</h1>
+      <p className="hero-summary">
+        Computer Science graduate, University of British Columbia, with hands-on experience building and
+        shipping full-stack, AI-powered web applications — Next.js/TypeScript, React, Python/FastAPI and the
+        Claude API. Seeking Junior Full Stack Software Engineer roles.
+      </p>
+      <div className="hero-actions">
+        <a className="btn-primary" href={`mailto:${EMAIL}`}>
+          {EMAIL}
+        </a>
+        <button className="btn-outline" onClick={onCopyEmail}>
+          {copyLabel}
+        </button>
+        {HERO_LINKS.map((l) => (
+          <span
+            key={l.key}
+            className="link-wrap"
+            onMouseEnter={() => onHoverEnter(l.key)}
+            onMouseLeave={onHoverLeave}
+          >
+            <a
+              className="link-outline"
+              href={l.href}
+              target={l.key === "cv" ? "_blank" : undefined}
+              rel={l.key === "cv" ? "noreferrer" : undefined}
+            >
+              <span className="link-tag">{l.tag}</span>
+              {l.label}
+            </a>
+            {hover === l.key && (
+              <span className="link-preview">
+                <span className="link-preview-url">{l.href}</span>
+                {l.preview}
               </span>
-            ))}
-          </div>
-        </div>
+            )}
+          </span>
+        ))}
       </div>
     </section>
   );
 }
-
-export default About;
